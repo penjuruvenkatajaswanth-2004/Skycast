@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Weather App</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Weather</h1>
+    </header>
+
+    <div class="controls">
+      <input id="city" type="text" placeholder="Enter city (e.g., Bengaluru)" aria-label="City" />
+      <button id="searchBtn">Search</button>
+      <button id="geoBtn" class="secondary" title="Use my current location">Use my location</button>
+    </div>
+
+    <p class="hint">Tip: Press Enter after typing a city. Uses OpenWeatherMap (metric °C).</p>
+
+    <div id="error" class="error" role="alert"></div>
+    <div id="loading" class="loading">Fetching weather…</div>
+
+    <section id="card" class="card" aria-live="polite">
+      <div class="cityline">
+        <h2 id="cityName">—</h2>
+        <span id="updatedAt" title="Last updated time"></span>
+      </div>
+      <div class="weather">
+        <img id="icon" alt="Weather icon" width="100" height="100" />
+        <div>
+          <div class="temp"><span id="temp">—</span>°C</div>
+          <div id="desc" style="text-transform: capitalize"></div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="pill">Feels like: <strong><span id="feels">—</span>°C</strong></div>
+        <div class="pill">Humidity: <strong><span id="humid">—</span>%</strong></div>
+        <div class="pill">Wind: <strong><span id="wind">—</span> m/s</strong></div>
+      </div>
+    </section>
+
+    <div class="footer">Data by OpenWeatherMap • Demo app for learning APIs</div>
+  </div>
+
+  <!-- Link JS -->
+  <script src="weather.js"></script>
+</body>
+</html>

@@ -27,15 +27,18 @@ It allows users to search for weather by city name or automatically fetch the we
 ## 🛠️ How to Use
 
 1. **Clone this repository**
+
    ```bash
    git clone https://github.com/<your-username>/simple-weather-app.git
    cd simple-weather-app
    ```
 
 2. **Open the project**
+
    - Simply open `weather.html` in your browser.
 
 3. **Set up your API key**
+
    - Open `weather.js`
    - Replace the placeholder key with your own from [OpenWeatherMap](https://home.openweathermap.org/api_keys):
      ```js
@@ -53,11 +56,11 @@ It allows users to search for weather by city name or automatically fetch the we
 
 ## 🖥️ Demo Preview
 
-| City Search  | Current Location |
-|--------------|------------------|
+| City Search                                                                  | Current Location                                                           |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | ![City Search Demo](https://via.placeholder.com/300x200?text=Search+by+City) | ![Location Demo](https://via.placeholder.com/300x200?text=Use+My+Location) |
 
-*(You can replace the images above with screenshots of your running app.)*
+_(You can replace the images above with screenshots of your running app.)_
 
 ---
 
@@ -95,4 +98,4 @@ This project is open source and available under the Jaswanth.
 
 ---
 
-> 🌦️ *"Check the sky before you fly — with Simple Weather App!"*
+> 🌦️ _"Check the sky before you fly — with Simple Weather App!"_
